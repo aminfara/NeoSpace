@@ -10,3 +10,8 @@ if empty(glob(g:neospace_user_config))
 endif
 
 execute "source " . g:neospace_user_config
+
+let g:neospace_active_layers = get(g:, 'neospace_active_layers', [])
+for layer in g:neospace_active_layers
+  execute "call neospace#layers#" . layer . "#configs()"
+endfor

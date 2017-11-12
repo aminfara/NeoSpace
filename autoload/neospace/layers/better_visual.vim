@@ -51,9 +51,31 @@ function! neospace#layers#better_visual#configs()
   set showcmd                           " show partial command
   set visualbell                        " beep visually
 
+  call s:neospace_layers_better_visual_terminal()
+
   let s:neospace_layers_better_visual_activated = 1
 endfunction
 
 function! neospace#layers#better_visual#activated()
   return s:neospace_layers_better_visual_activated
+endfunction
+
+function! s:neospace_layers_better_visual_terminal()
+  if $COLORTERM == 'gnome-terminal'
+    set term='xterm-256color'
+  endif
+
+  " Setting color to 16 for xterm
+  if $TERM == "xterm" || $TERM == 'screen'
+    set t_Co=16
+    " clearing using the current background color
+    set t_ut=
+  endif
+
+  " Setting color to 256 for more sophisticated terminals
+  if $TERM =~ '256color'
+    set t_Co=256
+    " clearing using the current background color
+    set t_ut=
+  endif
 endfunction

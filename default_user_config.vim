@@ -1,5 +1,4 @@
-echom "welcomeeeeee"
-
 let g:neospace_active_layers = [
-  \ 'spell_checking'
+  \ 'spell_checking',
+  \ 'indent_guides'
   \ ]

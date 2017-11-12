@@ -9,6 +9,7 @@ function! neospace#layers#spell_checking#configs()
   let g:neospace_layers_spell_checking_language =
               \ get(g:, "neospace_layers_spell_checking_language", "en_au")
 
+  " TODO: download right files for non english languages
   call neospace#helpers#download_file(
               \ 'http://ftp.vim.org/vim/runtime/spell/en.utf-8.spl',
               \ g:neospace_data_home . '/site/spell/en.utf-8.spl')

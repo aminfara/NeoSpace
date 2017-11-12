@@ -9,7 +9,7 @@ colorscheme default
 
 if empty(glob(g:neospace_user_config))
   silent execute "!cp " . g:neospace_config_home . "/default_user_config.vim "
-          \ . g:neospace_user_config
+        \ . g:neospace_user_config
 endif
 
 execute "source " . g:neospace_user_config

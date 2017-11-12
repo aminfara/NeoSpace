@@ -8,6 +8,7 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * Filetree using [NERDTree](https://github.com/scrooloose/nerdtree)
 * base16 of gruvbox color scheme oob
 * denite as everything finder [denite.nvim](https://github.com/Shougo/denite.nvim)
+* Tags using [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) and [tagbar](https://github.com/majutsushi/tagbar)
 
 # Layers
 * better_behaviour
@@ -18,8 +19,10 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * color_base16
 * color_gruvbox
 * finder
+* tags
 
 # Dependencies
 * git
 * base16-shell
 * silver-searcher(ag)
+* ctags

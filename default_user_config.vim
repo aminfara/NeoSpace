@@ -4,6 +4,7 @@ let g:neospace_active_layers = [
   \ 'color_base16',
   \ 'status_line',
   \ 'finder',
+  \ 'tags',
   \ 'spell_checking',
   \ 'indent_guides',
   \ 'file_tree'

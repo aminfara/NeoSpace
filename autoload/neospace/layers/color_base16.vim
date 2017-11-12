@@ -24,6 +24,8 @@ function! neospace#layers#color_base16#configs()
     endif
   endif
 
+  call neospace#layers#status_line#set_theme("base16")
+
   let s:neospace_layers_color_base16_activated = 1
 endfunction
 

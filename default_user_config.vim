@@ -1,4 +1,5 @@
 let g:neospace_active_layers = [
+  \ 'pyenv',
   \ 'better_behaviour',
   \ 'better_visual',
   \ 'color_base16',

@@ -9,8 +9,10 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * base16 of gruvbox color scheme oob
 * denite as everything finder [denite.nvim](https://github.com/Shougo/denite.nvim)
 * Tags using [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) and [tagbar](https://github.com/majutsushi/tagbar)
+* Interaction with pyenv setup
 
 # Layers
+* pyenv
 * better_behaviour
 * better_visual
 * spell_checking
@@ -26,3 +28,4 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * base16-shell
 * silver-searcher(ag)
 * ctags
+* python2 and pyhton3 neovim binding

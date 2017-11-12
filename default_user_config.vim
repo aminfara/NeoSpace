@@ -6,6 +6,7 @@ let g:neospace_active_layers = [
   \ 'status_line',
   \ 'finder',
   \ 'tags',
+  \ 'git',
   \ 'spell_checking',
   \ 'indent_guides',
   \ 'file_tree'

@@ -9,5 +9,6 @@ let g:neospace_active_layers = [
   \ 'git',
   \ 'spell_checking',
   \ 'indent_guides',
+  \ 'lint',
   \ 'file_tree'
   \ ]

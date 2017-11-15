@@ -11,6 +11,7 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * Tags using [vim-gutentags](https://github.com/ludovicchabant/vim-gutentags) and [tagbar](https://github.com/majutsushi/tagbar)
 * Interaction with pyenv setup
 * Git management using [vim-fugitive](https://github.com/tpope/vim-fugitive) and [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+* Lint using [Ale](https://github.com/w0rp/ale)
 
 # Layers
 * pyenv
@@ -24,6 +25,7 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * finder
 * tags
 * git
+* lint
 
 # Dependencies
 * git
@@ -31,3 +33,4 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * silver-searcher(ag)
 * ctags
 * python2 and pyhton3 neovim binding
+* linters

@@ -14,5 +14,6 @@ let g:neospace_active_layers = [
   \ 'comment',
   \ 'easy_motion',
   \ 'completion',
+  \ 'pairs',
   \ 'file_tree'
   \ ]

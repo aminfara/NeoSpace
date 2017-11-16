@@ -34,3 +34,8 @@ NeoSpace is a NeoVim config inspired by [Spacemacs](spacemacs.org).
 * ctags
 * python2 and pyhton3 neovim binding
 * linters
+
+# Key mappings
+Mode | Key | Function
+---- | --- | --------
+i | `jk` | escape to normal mode

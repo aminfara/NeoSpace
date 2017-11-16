@@ -12,6 +12,7 @@ let g:neospace_active_layers = [
   \ 'indent_guides',
   \ 'lint',
   \ 'comment',
+  \ 'easy_motion',
   \ 'completion',
   \ 'file_tree'
   \ ]

@@ -15,5 +15,6 @@ let g:neospace_active_layers = [
   \ 'easy_motion',
   \ 'completion',
   \ 'pairs',
+  \ 'javascript',
   \ 'file_tree'
   \ ]

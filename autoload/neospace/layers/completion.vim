@@ -1,14 +1,15 @@
 let s:neospace_layers_completion_activated = 0
 
 function! neospace#layers#completion#plugins()
-  function! UpdateRemotePlugins(arg)
+  function! UpdateRemotePlugin(argument)
+    call plug#load('deoplete.nvim')
     UpdateRemotePlugins
   endfunction
 
   return [
         \ ['Shougo/context_filetype.vim', { 'on': [] }],
         \ ['Shougo/neoinclude.vim', { 'on': [] }],
-        \ ['Shougo/deoplete.nvim', { 'do': function('UpdateRemotePlugins'), 'on': [] }],
+        \ ['Shougo/deoplete.nvim', { 'do': function('UpdateRemotePlugin'), 'on': [] }],
         \ ['SirVer/ultisnips', { 'on': [] }],
         \ ['honza/vim-snippets', { 'on': [] }]
         \]

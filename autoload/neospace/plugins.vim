@@ -5,7 +5,7 @@ let s:neospace_plugins_path = g:neospace_data_home . "/plugins"
 
 function! neospace#plugins#plugin_exists(plugin)
   let l:plugin_shortname = split(a:plugin, "/")[1]
-  return !empty(glob(s:neospace_plugins_path . "/" . l:plugin_shortname))
+  return !empty(glob(s:neospace_plugins_path . "/" . tolower(l:plugin_shortname)))
 endfunction
 
 function! neospace#plugins#manage_plugins()

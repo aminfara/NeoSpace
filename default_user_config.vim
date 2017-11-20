@@ -5,7 +5,6 @@ let g:neospace_active_layers = [
   \ 'better_visual',
   \ 'color_base16',
   \ 'status_line',
-  \ 'finder',
   \ 'tags',
   \ 'git',
   \ 'spell_checking',
@@ -16,5 +15,7 @@ let g:neospace_active_layers = [
   \ 'completion',
   \ 'pairs',
   \ 'javascript',
+  \ 'finder',
   \ 'file_tree'
   \ ]
+  " finder and file_tree need to come later to make sure wildignore is roperly

@@ -44,11 +44,8 @@ function! neospace#layers#finder#configs()
     call denite#custom#map('_', '<C-X>', '<denite:do_action:vsplit>', 'noremap')
     call denite#custom#map('_', '<Esc>', '<denite:quit>', 'noremap')
 
-    call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
-          \ [ '.git/', 'build/', '__pycache__/'])
-
-    call denite#custom#source(
-          \ 'file_rec', 'matchers', ['matcher_fuzzy', 'matcher_ignore_globs'])
+    call denite#custom#var('file_rec', 'command',
+          \ ['scantree.py', '--ignore', &wildignore])
 
     " TODO add to shortcuts and add shortcuts to README
     nnoremap <silent><Leader>db :<C-u>Denite buffer<CR>

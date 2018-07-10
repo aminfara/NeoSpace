@@ -18,6 +18,8 @@ function! neospace#layers#spell_checking#configs()
               \ g:neospace_data_home . '/site/spell/en.utf-8.sug')
   set spell
   execute "set spelllang=" . g:neospace_layers_spell_checking_language
+  execute "highlight clear SpellBad"
+  execute "highlight SpellBad cterm=undercurl,bold"
 
   let s:neospace_layers_spell_checking_activated = 1
 endfunction

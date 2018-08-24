@@ -17,7 +17,7 @@ function! neospace#layers#indent_guides#configs()
     augroup neospace_layers_indent_guides
       autocmd!
       autocmd VimEnter,Colorscheme * :highlight IndentGuidesOdd  ctermbg=18
-      autocmd VimEnter,Colorscheme * :highlight IndentGuidesEven ctermbg=19
+      autocmd VimEnter,Colorscheme * :highlight IndentGuidesEven ctermbg=18
     augroup END
   endif
 

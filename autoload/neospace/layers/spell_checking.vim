@@ -9,7 +9,7 @@ function! neospace#layers#spell_checking#configs()
   let g:neospace_layers_spell_checking_language =
               \ get(g:, "neospace_layers_spell_checking_language", "en_au")
 
-  " TODO: download right files for non english languages
+  " TODO: download right files for non English languages
   call neospace#helpers#download_file(
               \ 'http://ftp.vim.org/vim/runtime/spell/en.utf-8.spl',
               \ g:neospace_data_home . '/site/spell/en.utf-8.spl')
@@ -19,7 +19,13 @@ function! neospace#layers#spell_checking#configs()
   set spell
   execute "set spelllang=" . g:neospace_layers_spell_checking_language
   execute "highlight clear SpellBad"
-  execute "highlight SpellBad cterm=undercurl,bold"
+  execute "highlight clear SpellCap"
+  execute "highlight clear SpellLocal"
+  execute "highlight clear SpellRare"
+  execute "highlight SpellBad cterm=undercurl ctermbg=18"
+  execute "highlight SpellCap cterm=undercurl"
+  " execute "highlight SpellLocal cterm=undercurl"
+  execute "highlight SpellRare cterm=undercurl"
 
   let s:neospace_layers_spell_checking_activated = 1
 endfunction
